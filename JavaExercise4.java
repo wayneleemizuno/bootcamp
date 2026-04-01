@@ -36,26 +36,120 @@ public class JavaExercise4 {
     System.out.print("Input a year: ");
     int year = scanner.nextInt(); // > 0
 
-    switch (month) {
-      case 1:
-        number_Of_DaysInMonth = 31;
-        break;
-      case 2:
-      case 3:
-      case 4:
-      case 5:
-      case 6:
-      case 7:
-      case 8:
-      case 9:
-      case 10:
-      case 11:
-      case 12:
-      default:
+    if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
+      switch (month) {
+        case 1:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "January";
+          break;
+        case 2:
+          number_Of_DaysInMonth = 29;
+          monthOfName = "February";
+          break;
+        case 3:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "March";
+          break;
+        case 4:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "April";
+          break;
+        case 5:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "May";
+          break;
+        case 6:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "June";
+          break;
+        case 7:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "July";
+          break;
+        case 8:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "August";
+          break;
+        case 9:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "September";
+          break;
+        case 10:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "October";
+          break;
+        case 11:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "November";
+          break;
+        case 12:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "December";
+          break;
+        default:
+          number_Of_DaysInMonth = 0;
+          monthOfName = "Unknown";
+      }
+    } else {
+      switch (month) {
+        case 1:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "January";
+          break;
+        case 2:
+          number_Of_DaysInMonth = 28;
+          monthOfName = "February";
+          break;
+        case 3:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "March";
+          break;
+        case 4:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "April";
+          break;
+        case 5:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "May";
+          break;
+        case 6:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "June";
+          break;
+        case 7:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "July";
+          break;
+        case 8:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "August";
+          break;
+        case 9:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "September";
+          break;
+        case 10:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "October";
+          break;
+        case 11:
+          number_Of_DaysInMonth = 30;
+          monthOfName = "November";
+          break;
+        case 12:
+          number_Of_DaysInMonth = 31;
+          monthOfName = "December";
+          break;
+        default:
+          number_Of_DaysInMonth = 0;
+          monthOfName = "Unknown";
+      }
     }
+
     // Leap Year: The February has 29 days:
     // 1. Every 4 years (the year is divided by 4)
-    // 2. But if the year is divded by 100 and NOT divided by 400 -> Not a leap year.
+    // 2. But if the year is divded by 100 and NOT divided by 400 -> Not a leap
+    // year.
     // 3. if the year is divided by 400, it is a leap year.
     scanner.close();
     System.out.println(
