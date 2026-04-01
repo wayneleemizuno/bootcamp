@@ -14,7 +14,7 @@ public class JavaExercise2 {
 
     if (a == 9) {
       System.out.println("a is equals to 9");
-    } else if (a > 0 && a <= 8) {
+    } else if (a >= 0 && a <= 8) {
       System.out.println("a is between 0 and 8");
     } else if (a > 9) {
       System.out.println("a is greater than 9");
@@ -25,11 +25,13 @@ public class JavaExercise2 {
     // ==================== Question 2: String length ====================
     String str = "I love Java. I love coding";
 
-    if (str.length() == 27) {
+    int strLength = str.length();
+
+    if (strLength == 27) {
       System.out.println("str length = 27");
-    } else if (str.length() < 27) {
+    } else if (strLength < 27) {
       System.out.println("str length < 27");
-    } else if (str.length() > 27) {
+    } else if (strLength > 27) {
       System.out.println("str length > 27");
     }
 
@@ -38,11 +40,11 @@ public class JavaExercise2 {
     char grade = 'B';
 
     // 根據 score 判斷等級
-    if (score > 90) {
+    if (score >= 90) {
       System.out.println("Excellent! You got A");
-    } else if (score >= 75 && score < 90) {
+    } else if (score >= 75) {
       System.out.println("Good! You got B");
-    } else if (score >= 60 && score < 75) {
+    } else if (score >= 60) {
       System.out.println("Pass! You got C");
     } else {
       System.out.println("Fail... You need to study harder");
@@ -51,9 +53,9 @@ public class JavaExercise2 {
     // ==================== Question 4: String equals ====================
     String language = "Java";
 
-    if (language == "Java") {
+    if ("Java".equals(language)) {
       System.out.println("We are learning the best programming language!");
-    } else if (language == "Python") {
+    } else if ("Python".equals(language)) {
       System.out.println("Python is also very popular.");
     } else {
       System.out.println("Other programming language.");

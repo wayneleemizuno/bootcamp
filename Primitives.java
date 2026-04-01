@@ -44,5 +44,19 @@ public class Primitives {
     double d2 = 100.99;
     float f1 = 100.99f;
 
+    char c10 = 'a';
+    // ! char + int -> int
+    char c11 = 'a' + 1;
+    System.out.println(c11);// a
+    // normally downgrade assignment (assign int value to char variable) not
+    // allowed, but this is a special case which
+    // Java allows -> same as (char)('a' + 1)
+
+    char ch1 = 'a';
+    char ch2 = 'b';
+    if (ch2 > ch1) { // compare ASCII
+      System.out.println("ch2 ASCII > ch1 ASCII");
+    }
+
   }
 }

@@ -42,12 +42,13 @@ public class JavaExercise1 {
     byte b2 = 70;
     // code here with tips, pls fix ...
     // sum = b1 + b2;
-    int anotherSum = b1 + b2;
-    System.out.println("The another sum reuslt is " + anotherSum);
+    sum = b1 + b2;
+    // int anotherSum = b1 + b2;
+    System.out.println("The another sum reuslt is " + sum);
 
     // declare two boolean variable with true and false value
-boolean varB = false;
-boolean varC = true;
+    boolean varB = false;
+    boolean varC = true;
     System.out.println("The variable varB is " + varB);
     System.out.println("The variable varC is " + varC);
 
@@ -72,7 +73,7 @@ boolean varC = true;
     int x = 2;
     // code here ... define the x and assign value to it
     int result = e - o * x / y;
-//? 7 - 8 * x / 4 = 3
+    // ? 7 - 8 * x / 4 = 3
     System.out.println("The result is " + result);
   }
 }
