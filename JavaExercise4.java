@@ -36,114 +36,62 @@ public class JavaExercise4 {
     System.out.print("Input a year: ");
     int year = scanner.nextInt(); // > 0
 
-    if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
-      switch (month) {
-        case 1:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "January";
-          break;
-        case 2:
+    switch (month) {
+      case 1:
+        number_Of_DaysInMonth = 31;
+        monthOfName = "January";
+        break;
+      case 2:
+        if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
           number_Of_DaysInMonth = 29;
-          monthOfName = "February";
-          break;
-        case 3:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "March";
-          break;
-        case 4:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "April";
-          break;
-        case 5:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "May";
-          break;
-        case 6:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "June";
-          break;
-        case 7:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "July";
-          break;
-        case 8:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "August";
-          break;
-        case 9:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "September";
-          break;
-        case 10:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "October";
-          break;
-        case 11:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "November";
-          break;
-        case 12:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "December";
-          break;
-        default:
-          number_Of_DaysInMonth = 0;
-          monthOfName = "Unknown";
-      }
-    } else {
-      switch (month) {
-        case 1:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "January";
-          break;
-        case 2:
+        } else {
           number_Of_DaysInMonth = 28;
-          monthOfName = "February";
-          break;
-        case 3:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "March";
-          break;
-        case 4:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "April";
-          break;
-        case 5:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "May";
-          break;
-        case 6:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "June";
-          break;
-        case 7:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "July";
-          break;
-        case 8:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "August";
-          break;
-        case 9:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "September";
-          break;
-        case 10:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "October";
-          break;
-        case 11:
-          number_Of_DaysInMonth = 30;
-          monthOfName = "November";
-          break;
-        case 12:
-          number_Of_DaysInMonth = 31;
-          monthOfName = "December";
-          break;
-        default:
-          number_Of_DaysInMonth = 0;
-          monthOfName = "Unknown";
-      }
+        }
+        monthOfName = "February";
+        break;
+      case 3:
+        number_Of_DaysInMonth = 31;
+        monthOfName = "March";
+        break;
+      case 4:
+        number_Of_DaysInMonth = 30;
+        monthOfName = "April";
+        break;
+      case 5:
+        number_Of_DaysInMonth = 31;
+        monthOfName = "May";
+        break;
+      case 6:
+        number_Of_DaysInMonth = 30;
+        monthOfName = "June";
+        break;
+      case 7:
+        number_Of_DaysInMonth = 31;
+        monthOfName = "July";
+        break;
+      case 8:
+        number_Of_DaysInMonth = 31;
+        monthOfName = "August";
+        break;
+      case 9:
+        number_Of_DaysInMonth = 30;
+        monthOfName = "September";
+        break;
+      case 10:
+        number_Of_DaysInMonth = 31;
+        monthOfName = "October";
+        break;
+      case 11:
+        number_Of_DaysInMonth = 30;
+        monthOfName = "November";
+        break;
+      case 12:
+        number_Of_DaysInMonth = 31;
+        monthOfName = "December";
+        break;
+      default:
+        number_Of_DaysInMonth = 0;
+        monthOfName = "Unknown";
     }
 
     // Leap Year: The February has 29 days:

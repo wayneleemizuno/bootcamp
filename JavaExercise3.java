@@ -6,12 +6,9 @@ public class JavaExercise3 {
     // 3. Not an alphabet
     char ch = 'k';
     String letter = Character.toString(ch).toUpperCase();
-    System.out.println(letter);
-    boolean isAlphabet = false;
-    boolean isVowel = false;
 
     if (ch >= 65 && ch <= 122) {
-      if (letter.equals("A")  || letter.equals("E")  || letter.equals("I") || letter.equals("O") || letter.equals("U")) {
+      if (letter.equals("A") || letter.equals("E") || letter.equals("I") || letter.equals("O") || letter.equals("U")) {
         System.out.println("It's a vowel");
       } else {
         System.out.println("It's a consonant.");
@@ -24,7 +21,16 @@ public class JavaExercise3 {
     // Experience ≥ 10 years → 20% bonus
     // 5–9 years → 10% bonus
     // < 5 years → 5% bonus
-    int exp = 12;
-    int salary = 110_000;
+    int exp = 5;
+    int salary = 150_000;
+    int bonus;
+    if (exp >= 10) {
+      bonus = salary *= 0.2;
+    } else if (exp >= 5 && exp <= 9) {
+      bonus = salary *= 0.1;
+    } else {
+      bonus = salary *= 0.05;
+    }
+    System.out.println(bonus);
   }
 }
