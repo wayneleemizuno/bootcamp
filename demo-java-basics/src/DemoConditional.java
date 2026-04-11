@@ -1,4 +1,4 @@
-public class ConditionalDemo {
+public class DemoConditional {
   public static void main(String[] args) {
     int age = 40;
     // boolean isElderly = age > 60;
@@ -117,17 +117,17 @@ public class ConditionalDemo {
     boolean isLeapYear = false;
 
     // if (year % 4 == 0) {
-    //   if (year % 100 == 0) {
-    //     if (year % 400 == 0) {
-    //       isLeapYear = true;
-    //     } else {
-    //       isLeapYear = false;
-    //     }
-    //   } else {
-    //     isLeapYear = false;
-    //   }
+    // if (year % 100 == 0) {
+    // if (year % 400 == 0) {
+    // isLeapYear = true;
     // } else {
-    //   isLeapYear = false;
+    // isLeapYear = false;
+    // }
+    // } else {
+    // isLeapYear = false;
+    // }
+    // } else {
+    // isLeapYear = false;
     // }
 
     if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
@@ -137,7 +137,5 @@ public class ConditionalDemo {
     }
     System.out.println("Leap year? " + isLeapYear);
 
-
-    
   }
 }

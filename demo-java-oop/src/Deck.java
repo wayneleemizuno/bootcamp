@@ -17,10 +17,26 @@ public class Deck {
   }
 
   // shuffle (random)
+  public void shuffle() {
+    for (int i = 0; i < cards.length; i++) {
+      int randomIdx = (int) Math.floor(Math.random() * cards.length);
+      Card temp = cards[i];
+      cards[i] = cards[randomIdx];
+      cards[randomIdx] = temp;
+    }
+
+  }
 
   // Class -> 5-card combination -> boolean
 
   public static void main(String[] args) {
+    Deck deck1 = new Deck();
+    deck1.shuffle();
+
+    for (int i = 0; i < deck1.cards.length; i++) {
+      System.out.println(deck1.cards[i].getRank() + " " +
+          deck1.cards[i].getSuite());
+    }
 
   }
 
