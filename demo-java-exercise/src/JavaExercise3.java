@@ -1,3 +1,5 @@
+package src;
+
 public class JavaExercise3 {
   public static void main(String[] args) {
     // Take a character and check whether it is:

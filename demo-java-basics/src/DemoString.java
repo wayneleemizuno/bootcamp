@@ -1,4 +1,4 @@
-public class StringDemo {
+public class DemoString {
   public static void main(String[] args) {
     String s1 = "hello";
     String s2 = "Dog";
@@ -88,11 +88,9 @@ public class StringDemo {
     String combined = s16.concat(" ").concat(s17);
     System.out.println(combined);
 
-
     String s18 = "abc";
     String s19 = "def";
     System.out.println(s18.compareTo(s19));
-
 
     String s20 = "hello";
     String s21 = "HeLLo";

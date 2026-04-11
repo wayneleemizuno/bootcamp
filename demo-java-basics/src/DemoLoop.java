@@ -1,4 +1,4 @@
-public class LoopDemo {
+public class DemoLoop {
   public static void main(String[] args) {
     // i, j, k used for FOR LOOP
     // initialisation -> int i = 0

@@ -1,3 +1,5 @@
+package src;
+
 public class JavaExercise5 {
   // Sum values of an array
   public static void main(String[] args) {
